@@ -63,7 +63,7 @@ A Riot tag is a combination of layout (HTML) and logic (JavaScript). Here are th
 
 * HTML is defined first and the logic is enclosed inside an optional `<script>` tag. *note: the script tag can not be used when including tag definitions in the document body, only in external tag files*
 * Without the `<script>` tag the JavaScript starts where the last HTML tag ends.
-* Custom tags can be empty, HTML only or JavaScript only
+* Custom tags can be empty, HTML only, JavaScript only or a mix of HTML and JavaScript
 * Quotes are optional: `<foo bar={ baz }>` becomes `<foo bar="{ baz }">`.
 * Smart ES6 like method syntax is supported: `methodName() { }` becomes `this.methodName = function() {}.bind(this)` where `this` always points to the current tag instance.
 * A shorthand syntax for class names is available: `class={ completed: done }` renders to `class="completed"`when the value of `done` is a true value.
